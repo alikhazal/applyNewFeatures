@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectedColleague"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="204dp"
+        android:contentDescription="@string/colleague_name"
+        android:fontFamily="casual"
+        android:text="@string/colleague_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="222dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/team_icon"
+        android:foreground="@drawable/team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/team" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/add_name"
+        android:importantForAccessibility="auto"
+        android:inputType="textPersonName"
+        android:text="@string/add_name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/addPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedPhone"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedColleague" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_colleague"
+        app:layout_constraintBottom_toTopOf="@+id/chooseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chooseBtn"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/choose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/addPhone"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/add_phone"
+        android:inputType="textPersonName"
+        android:text="@string/add_phone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextFields" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

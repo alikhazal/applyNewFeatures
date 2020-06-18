@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FriendsTalk</string>
+    <string name="choose">Choose !</string>
+    <string name="add_colleague">Add Colleague</string>
+    <string name="phone">Phone</string>
+    <string name="add_name">Add name</string>
+    <string name="colleague_name">Colleague Name</string>
+    <string name="add_phone">Add phone</string>
+    <string name="team_icon">Team icon</string>
+</resources>
